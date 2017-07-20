@@ -57,6 +57,12 @@ app.get('/error',(req,res) =>{
 
 });
 
+app.get('/projects', (req,res) =>{
+    res.render('projects.hbs',{
+        pageTitle : 'projects page'
+    });
+});
+
 //determine the port 
 app.listen((port),() => {
 console.log(`server is up on ${port}`)});
